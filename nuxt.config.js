@@ -14,7 +14,8 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.3/css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.css' }
     ]
   },
   /*
@@ -22,6 +23,12 @@ module.exports = {
   */
   css: [
     { src: '~/assets/scss/navigation.scss', lang: 'scss' }
+  ],
+  /*
+  ** Custom Plugin
+   */
+  plugins: [
+    { src: '~plugins/swiper.js', ssr: false }
   ],
   /*
   ** Customize the progress bar color
